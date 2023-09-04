@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/POU FELIZ.png" type="image/x-icon">
+    <title>Dou</title>
+</head>
+<body>
+    <div class="imagenes-formulario">
+        <div>
+            <form class="formulario" id="formulario">
+              <label for="nombre">Nombre:</label>
+              <input class="input" type="text" id="nombre" required><br>
+              <button class="boton-enviar" id="enviar" type="button" onclick="enviarDatos()">Enviar</button>
+              <button class="boton-mostrar" id="mostrar" type="button" onclick="mostrarDatos()">Mostrar</button>
+            </form>
+    
+        </div>
+    
+        <div>  
+            <nav class="imagenes">
+                <img class="dou-feliz" id="dou-feliz" src="images/POU FELIZ.png">
+                <img class="dou-triste" id="dou-triste" src="images/POU TRISTE.png">
+                <img class="dou-dormido" id="dou-dormido" src="images/POU DORMIDO.png">
+                <img class="dou-comiendo" id="dou-comiendo" src="images/POU COMIENDO.png">
+            </nav>
+        </div>
+
+    </div>
+
+        <div class = "nombre">
+            <h3 class="datos" id="datosMostrados"></h3>
+        </div>
+
+        <div class="energia">
+            <h3>Me quedan <span id="energia">100</span> puntitos de energía</h3>
+        </div>
+        
+        <nav class="botones-generales">
+            <button class="botones" type="button" onclick="correr()">Correr</button>
+            <button class="botones" type="button" onclick="dormir()">Dormir</button>
+            <button class="botones" type="button" onclick="comer()">Comer</button>
+            <button class="botones" type="button" onclick="jugar()">Jugar</button>
+        </nav>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
